@@ -193,7 +193,9 @@ const MyCourses = () => {
                 <th className="px-4 py-3 font-semibold truncate">Earnings</th>
                 <th className="px-4 py-3 font-semibold truncate">Students</th>
                 <th className="px-4 py-3 font-semibold truncate">Published On</th>
-                <th className="px-4 py-3 font-semibold truncate">Modification</th>
+
+                {/* this for edit and delete button */}
+                {/* <th className="px-4 py-3 font-semibold truncate">Modification</th> */}
               </tr>
             </thead>
             <tbody className="text-sm text-gray-500">
@@ -222,8 +224,10 @@ const MyCourses = () => {
                     {new Date(course.createdAt).toLocaleDateString()}
                   </td>
                   <td>
-                    <div className="flex flex-wrap gap-3">
-                      {/* Edit Button */}
+
+
+                    {/* Edit and Delete button */}
+                    {/* <div className="flex flex-wrap gap-3">
                       <button
                         className="flex items-center gap-2 px-3 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition duration-200 text-sm sm:text-base"
                         onClick={() => handleEdit(course)}
@@ -232,12 +236,13 @@ const MyCourses = () => {
                         <span className="hidden sm:inline">Edit</span>
                       </button>
 
-                      {/* Delete Button */}
                       <button onClick={() => handleDelete(course._id)} className="flex items-center gap-2 px-2 py-2 text-white bg-red-500 rounded-lg hover:bg-red-600 transition duration-200 text-sm sm:text-base">
                         <FaTrash className="text-sm sm:text-base" />
                         <span className="hidden sm:inline">Delete</span>
                       </button>
-                    </div>
+                    </div> */}
+
+
                   </td>
                 </tr>
               ))}
