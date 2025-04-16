@@ -1,76 +1,85 @@
 import React from "react";
-import Footer from "../../components/student/Footer";
 import PrivacyPolicyImage from "../../assets/privacy-policy.jpg";
+import Footer from "../../components/student/Footer";
 
-const PrivacyPolicyPage = () => {
+const PrivacyPolicy = () => {
     return (
-        <div className="bg-white text-gray-800">
+        <div>
             {/* Hero Section */}
-            <div 
-                className="relative h-[40vh] md:h-[50vh] lg:h-[60vh] bg-center bg-no-repeat bg-cover"
-                style={{ backgroundImage: `url(${PrivacyPolicyImage})` }}
-            >
-                <div className="absolute inset-0 bg-primary bg-opacity-75 flex items-center justify-center">
-                    <h1 className="text-white text-4xl font-bold">Privacy Policy</h1>
-                </div>
+            <div className="flex justify-center mt-8">
+                <img
+                    src={PrivacyPolicyImage}
+                    alt="Privacy Policy"
+                    className="w-full max-w-4xl h-auto object-contain"
+                />
             </div>
 
             {/* Privacy Content Section */}
-            <div className="max-w-7xl mx-auto px-7 md:px-0 py-12 text-left">
-                <h2 className="text-3xl font-semibold mb-6 text-primary">Your Privacy Matters</h2>
-                <p className="text-gray-700 mb-6">
+            <div className="max-w-4xl mx-auto p-4 mt-8 text-left">
+                <h2 className="text-2xl font-bold mb-4">Your Privacy Matters</h2>
+                <p className="mb-6 text-gray-700">
                     Welcome to CodeCraft. Your privacy is important to us. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you use our platform.
                 </p>
-                
-                <h3 className="text-2xl font-semibold mt-6 mb-2">1. Information We Collect</h3>
-                <p className="text-gray-700 mb-4">
-                    We collect personal and non-personal information to improve our services. This may include your name, email address, IP address, and usage data.
-                </p>
 
-                <h3 className="text-2xl font-semibold mt-6 mb-2">2. How We Use Your Information</h3>
-                <p className="text-gray-700 mb-4">
-                    The collected information is used to enhance user experience, improve our platform, communicate with users, and comply with legal requirements.
-                </p>
+                <div className="space-y-6 text-gray-700">
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">1. Information We Collect</h3>
+                        <ul className="list-disc pl-6">
+                            <li>Personal Information: Name, email address, contact details, etc.</li>
+                            <li>Usage Data: Pages visited, time spent, and interactions.</li>
+                            <li>Cookies and Tracking: To enhance user experience and analytics.</li>
+                        </ul>
+                    </div>
 
-                <h3 className="text-2xl font-semibold mt-6 mb-2">3. Data Security</h3>
-                <p className="text-gray-700 mb-4">
-                    We implement security measures to protect your data, but no method of transmission over the internet is 100% secure.
-                </p>
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">2. How We Use Your Information</h3>
+                        <ul className="list-disc pl-6">
+                            <li>To provide and maintain our services.</li>
+                            <li>To personalize user experience.</li>
+                            <li>To communicate updates and promotions.</li>
+                            <li>To analyze performance and improve our platform.</li>
+                        </ul>
+                    </div>
 
-                <h3 className="text-2xl font-semibold mt-6 mb-2">4. Third-Party Services</h3>
-                <p className="text-gray-700 mb-4">
-                    We may use third-party services for analytics, advertising, or payment processing. These services have their own privacy policies.
-                </p>
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">3. Information Sharing</h3>
+                        <p>
+                            We do not sell or trade your personal information. We may share information with trusted partners who assist in operating our platform, as long as they agree to keep this information confidential.
+                        </p>
+                    </div>
 
-                <h3 className="text-2xl font-semibold mt-6 mb-2">5. Your Rights</h3>
-                <p className="text-gray-700 mb-4">
-                    You have the right to access, update, or delete your personal data. Contact us for any concerns regarding your privacy.
-                </p>
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">4. Data Security</h3>
+                        <p>
+                            We implement appropriate security measures to protect your data from unauthorized access, alteration, or disclosure.
+                        </p>
+                    </div>
 
-                <h3 className="text-2xl font-semibold mt-6 mb-2">6. Cookies Policy</h3>
-                <p className="text-gray-700 mb-4">
-                    We use cookies to enhance your browsing experience. You can choose to disable cookies through your browser settings.
-                </p>
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">5. Your Rights</h3>
+                        <p>
+                            You have the right to access, correct, or delete your personal information. Contact us at any time for assistance.
+                        </p>
+                    </div>
 
-                <h3 className="text-2xl font-semibold mt-6 mb-2">7. Data Retention</h3>
-                <p className="text-gray-700 mb-4">
-                    We retain your personal data only as long as necessary for the purposes outlined in this policy. You can request deletion of your data at any time.
-                </p>
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">6. Updates to This Policy</h3>
+                        <p>
+                            We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.
+                        </p>
+                    </div>
 
-                <h3 className="text-2xl font-semibold mt-6 mb-2">8. Changes to This Policy</h3>
-                <p className="text-gray-700 mb-4">
-                    We may update this Privacy Policy from time to time. Please review this page periodically for any changes.
-                </p>
-
-                <h3 className="text-2xl font-semibold mt-6 mb-2">9. Contact Us</h3>
-                <p className="text-gray-700">
-                    If you have any questions about this Privacy Policy, please contact us at support@codecraft.com.
-                </p>
+                    <div>
+                        <h3 className="text-xl font-semibold mb-2">7. Contact Us</h3>
+                        <p>
+                            If you have any questions about this Privacy Policy, please contact us at support@codecraft.com.
+                        </p>
+                    </div>
+                </div>
             </div>
-            
             <Footer />
         </div>
     );
 };
 
-export default PrivacyPolicyPage;
+export default PrivacyPolicy;

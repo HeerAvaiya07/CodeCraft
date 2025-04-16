@@ -114,9 +114,9 @@ const CourseDetails = () => {
                         className={`transform transition-transform ${openSections[index] ? "rotate-180" : ""}`} />
                       <p className="font-medium md:text-base text-sm">{chapter.chapterTitle}</p>
                     </div>
-                    <p className="text-sm md:text-default">
+                    {/* <p className="text-sm md:text-default">
                       {chapter.chapterContent.length} lectures - {parseFloat(calculateChapterTime(chapter)).toFixed(2)} minutes
-                    </p>
+                    </p> */}
                   </div>
                   <div className={`overflow-hidden transition-all duration-300 ${openSections[index] ? "max-h-96" : "max-h-0"}`} >
                     <ul className="list-disc md:pl-10 pl-4 pr-4 py-2 text-gray-600 border-t border-gray-300">
@@ -172,4 +172,5 @@ const CourseDetails = () => {
 };
 
 export default CourseDetails;
+
 

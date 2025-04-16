@@ -41,7 +41,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className={`flex items-center justify-between px-4 sm:px-10 md:px-14 lg:px-36 border-b border-gray-500 py-4 ${isCoursesListPage ? 'bg-white' : 'bg-cyan-100'}`}>
+    <div className={`flex items-center justify-between px-4 sm:px-10 md:px-14 lg:px-36 border-b border-gray-500 py-4 ${isCoursesListPage ? 'bg-cyan-100' : 'bg-cyan-100'}`}>
       <div className='flex items-center space-x-2'><img onClick={() => navigate('/')} src={assets.logo} alt="Logo" className="w-14 lg:w-18 cursor-pointer"
       /> <label><h1 className='text-3xl font-semibold'>Code Craft</h1></label></div>
 
